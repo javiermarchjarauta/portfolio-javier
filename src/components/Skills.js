@@ -2,12 +2,13 @@ import javaLogo from "../assets/img/java-logo-1.png"
 import swiftLogo from "../assets/img/swiftlogo.png"
 import reactLogo from "../assets/img/React-icon.svg.png"
 import ionicLogo from "../assets/img/ionicLogo.png"
-import reactNative from "../assets/img/react-native-logo.png"
+import csharpLogo from "../assets/img/Csharp_Logo.png"
+import androidLogo from "../assets/img/androidLogo.png"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png"
+import colorSharp from "../assets/img/Dark Planet [1920x1080].jpg"
 
 export const Skills = () => {
     const responsive = {
@@ -35,38 +36,55 @@ export const Skills = () => {
         <div className="container">
             <div className="row">
                 <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
+                    <div className="skill-bx">
+                        <h2>Conocimientos</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                             <img src={reactLogo} alt="Image" />
                                 <h5>React js</h5>
                             </div>
+                            
                             <div className="item">
-                                <img src={reactLogo} alt="Image" />
-                                <h5>React native</h5>
+                                <img src={androidLogo} alt="Image" />
+                                <h5>Android Studio</h5>
+                                <h6>Java</h6>
                             </div>
+                            
+
+                            <div className="item">
+                            <img src={reactLogo} alt="Image" />
+                            <h5>React native</h5>
+                        </div>
+                            <div className="item">
+                            <img src={ionicLogo} alt="Image" />
+                            <h5>Ionic</h5>
+                        </div>
+                           
+                            <div className="item">
+                            <img src={csharpLogo} alt="Image" />
+                            <h5>C#</h5>
+                            
+                        </div>
+
                             <div className="item">
                                 <img src={swiftLogo} alt="Image" />
                                 <h5>Swift</h5>
                                 <h6>"Nivel básico"</h6>
                             </div>
+                            
                             <div className="item">
                             <img src={javaLogo} alt="Image" />
                             <h5>Java</h5>
                         </div>
-                        <div className="item">
-                            <img src={ionicLogo} alt="Image" />
-                            <h5>Ionic</h5>
-                        </div>
+                        
                             
                         </Carousel>
                     </div>
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+    
     </section>
       )
 }
