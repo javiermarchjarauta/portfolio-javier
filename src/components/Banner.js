@@ -52,7 +52,7 @@ export const Banner = () => {
           <div className="heading-container">
             <h1>
               {"programador "}
-              <span className="wrap">{text}</span>
+              <span className="flicker-slow">{text}</span>
             </h1>
             <p>Javier March</p>
           </div>
