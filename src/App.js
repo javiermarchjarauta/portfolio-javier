@@ -7,9 +7,17 @@ import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { FooterComp } from './components/Footer';
 import { Contact } from './components/Contact';
+import { useEffect } from 'react';
+
+
 
 
 function App() {
+
+  useEffect(() => {
+    document.title = 'Portfolio de Javier';
+  }, []);
+
   return (
     <div className="App">
      <NavBar></NavBar>
