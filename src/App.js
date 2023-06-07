@@ -14,9 +14,7 @@ import { useEffect } from 'react';
 
 function App() {
 
-  useEffect(() => {
-    document.title = 'Portfolio de Javier';
-  }, []);
+ 
 
   return (
     <div className="App">
