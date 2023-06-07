@@ -225,9 +225,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
   height: 100px;
   width: 100px;
+  filter: drop-shadow(2px 2px 4px #fff);
   
-  
-  text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #2cd4a2, 2px 3px 15px #2cd4ad, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #0aebf3,40px 0vw 200px #0dfff7;
+
   
 }
 
@@ -464,7 +464,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact img {
   width: 92%;
-  filter: grayscale(1);
+  filter: sepia(1);
 }
 .contact h2 {
 	font-size: 45px;
@@ -533,11 +533,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 16px 0 36px 0;
-  background-image: url('./assets/img/footer-bg.png');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: grayscale(1);
+  
+  
 }
 
 
