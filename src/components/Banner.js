@@ -51,7 +51,7 @@ export const Banner = () => {
         <Col xs={12} md={6} xl={7}>
           <div className="heading-container">
             <h1>
-              {"Programador "}
+              {"programador "}
               <span className="wrap">{text}</span>
             </h1>
             <p>Javier March</p>
