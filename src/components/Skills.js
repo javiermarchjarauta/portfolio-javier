@@ -1,8 +1,8 @@
-import javaLogo from "../assets/img/java-logo-1.png"
+import javaLogo from "../assets/img/icons/java-plain.svg"
 import swiftLogo from "../assets/img/swiftlogo.png"
-import reactLogo from "../assets/img/React-icon.svg.png"
-import ionicLogo from "../assets/img/ionicLogo.png"
-import csharpLogo from "../assets/img/Csharp_Logo.png"
+import reactLogo from "../assets/img/icons/react-original.svg"
+import ionicLogo from "../assets/img/icons/ionic-original.svg"
+import csharpLogo from "../assets/img/icons/csharp-plain.svg"
 import androidLogo from "../assets/img/androidLogo.png"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
