@@ -2,40 +2,27 @@ import { Col, Container, Row, Tab, Nav } from "react-bootstrap";
 import projImg1 from "../assets/img/React-icon.svg.png";
 import { ProjectCard } from "./ProjectCard";
 import colorsharp2 from "../assets/img/color-sharp2.png";
+import piedrapapel from "../assets/img/piedrapapeltijera.png"
 
 export const Projects = () => {
   const proyectos = [
     {
-      title: "Proyecto 1",
-      description: "descripcion proyecto 1",
-      imgUrl: projImg1,
-      code: "React"
+      title: "Piedra Papel Tijera",
+      description: "React JavaScript",
+      imgUrl: piedrapapel,
+      code: "React",
+      url: "https://rockpaperscissors-javier.vercel.app/"
     },
-    {
-      title: "Proyecto 2",
-      description: "descripcion proyecto 1",
-      imgUrl: projImg1,
-      code: "React"
-    },
-    {
-      title: "Proyecto 3",
-      description: "descripcion proyecto 1",
-      imgUrl: projImg1,
-      code: "Java"
-    },
-    {
-      title: "Proyecto 4",
-      description: "descripcion proyecto 1",
-      imgUrl: projImg1,
-      code: "Swift"
-    },
-    {
-      title: "Proyecto 5",
-      description: "descripcion proyecto 1",
-      imgUrl: projImg1,
-      code: "Swift"
-    },
+    // Add more projects here
   ];
+
+  const filterProjects = (code) => {
+    if (code === "all") {
+      return proyectos;
+    } else {
+      return proyectos.filter((project) => project.code === code);
+    }
+  };
 
   return (
     <section className="project" id="project">
@@ -43,66 +30,51 @@ export const Projects = () => {
         <Row>
           <Col>
             <h2>Proyectos</h2>
-            <p>jiji</p>
+            <p>// Si tienes alguna duda, no dudes en preguntar</p>
             <Tab.Container id="projects-tab" defaultActiveKey="all">
               <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-             
-              <Nav.Item>
-              <Nav.Link eventKey="JavaScript">JavaScript</Nav.Link>
-            </Nav.Item>
-              <Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="React">React</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
                   <Nav.Link eventKey="Swift">Swift</Nav.Link>
-                </Nav.Item>  
-              
-                
+                </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="Java">Java</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="all">Todos</Nav.Link>
                 </Nav.Item>
-                
               </Nav>
               <Tab.Content>
-              <Tab.Pane eventKey="JavaScript">
+                <Tab.Pane eventKey="React">
                   <Row>
-                    {proyectos.map((project, index) => {
-                      return (
-                        <ProjectCard key={index} proyect={project} />
-                      );
+                    {filterProjects("React").map((project, index) => {
+                      return <ProjectCard key={index} proyect={project} />;
                     })}
                   </Row>
                 </Tab.Pane>
-              <Tab.Pane eventKey="Swift">
+                <Tab.Pane eventKey="Swift">
                   <Row>
-                    {proyectos.map((project, index) => {
-                      return (
-                        <ProjectCard key={index} proyect={project} />
-                      );
+                    {filterProjects("Swift").map((project, index) => {
+                      return <ProjectCard key={index} proyect={project} />;
                     })}
                   </Row>
                 </Tab.Pane>
-                
-                
                 <Tab.Pane eventKey="Java">
                   <Row>
-                    {proyectos.map((project, index) => {
-                      return (
-                        <ProjectCard key={index} proyect={project} />
-                      );
+                    {filterProjects("Java").map((project, index) => {
+                      return <ProjectCard key={index} proyect={project} />;
                     })}
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="all">
                   <Row>
-                    {proyectos.map((project, index) => {
-                      return (
-                        <ProjectCard key={index} proyect={project} />
-                      );
+                    {filterProjects("all").map((project, index) => {
+                      return <ProjectCard key={index} proyect={project} />;
                     })}
                   </Row>
                 </Tab.Pane>
-                
               </Tab.Content>
             </Tab.Container>
           </Col>
