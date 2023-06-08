@@ -1,7 +1,7 @@
 import { Col, Container, Row, Tab, Nav } from "react-bootstrap";
 import projImg1 from "../assets/img/React-icon.svg.png";
 import { ProjectCard } from "./ProjectCard";
-import colorsharp2 from "../assets/img/color-sharp2.png";
+import colorsharp2 from "../assets/img/color-sharp2.webp";
 import piedrapapel from "../assets/img/piedrapapeltijera.png"
 
 export const Projects = () => {
