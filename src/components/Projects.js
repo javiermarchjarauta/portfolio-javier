@@ -13,7 +13,13 @@ export const Projects = () => {
       code: "React",
       url: "https://rockpaperscissors-javier.vercel.app/"
     },
-    // Add more projects here
+    {
+      title: "Piedra Papel Tijera",
+      description: "React JavaScript",
+      imgUrl: piedrapapel,
+      code: "React",
+      url: "https://rockpaperscissors-javier.vercel.app/"
+    },
   ];
 
   const filterProjects = (code) => {

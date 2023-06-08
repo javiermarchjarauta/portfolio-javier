@@ -6,9 +6,7 @@ import csharpLogo from "../assets/img/icons/csharp-plain.svg"
 import androidLogo from "../assets/img/androidLogo.png"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/Dark Planet [1920x1080].jpg"
+
 
 export const Skills = () => {
     const responsive = {
