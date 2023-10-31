@@ -36,7 +36,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx">
                         <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p></p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                             <img src={reactLogo} alt="Image" />
@@ -68,7 +68,7 @@ export const Skills = () => {
                             <div className="item">
                                 <img src={swiftLogo} alt="Image" />
                                 <h5>Swift</h5>
-                                <h6>"Nivel básico"</h6>
+                                
                             </div>
                             
                             <div className="item">

@@ -401,7 +401,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #ffffff -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #292928 -5.91%, #E9B33B 111.58%);
+
   opacity: 0;
   position: absolute;
   width: 100%;
