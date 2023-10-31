@@ -1,8 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap"
 import logo from "../assets/img/logo.svg"
-import nav1 from "../assets/img/discordlogo.png"
-import nav2 from "../assets/img/25231.png"
-import nav3 from "../assets/img/nav-icon1.svg"
+
 
 
 

@@ -1,9 +1,7 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import logo from '../assets/img/logo.svg';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/25231.png';
-import navIcon3 from '../assets/img/discordlogo.png';
+
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState("home");
@@ -71,13 +69,7 @@ export const NavBar = () => {
                         </Nav.Link>
                     </Nav>
                     <Nav className="ms-auto">
-                        <Nav.Link
-                            href="https://es.linkedin.com/in/javier-march-jarauta-698872195"
-                            className={activeLink === "" ? "active navbar-link" : "navbar-link"}
-                            
-                        >
-                            LinkedIn
-                        </Nav.Link>
+                        
                         <Nav.Link
                             href="https://github.com/javiermarchjarauta"
                             className={activeLink === "skills" ? "active navbar-link" : "navbar-link"}
@@ -85,19 +77,8 @@ export const NavBar = () => {
                         >
                             GitHub
                         </Nav.Link>
-                        <Nav.Link
-                            href="https://www.infojobs.net/candidate/cv/view/index.xhtml?dgv=6847602357049212651"
-                            className={activeLink === "projects" ? "active navbar-link" : "navbar-link"}
-                           
-                        >
-                            Infojobs
-                        </Nav.Link>
-                        <Nav.Link
-                            onClick={downloadFile}
-                            className={activeLink === "download" ? "active navbar-link" : "navbar-link"}
-                        >
-                            CV
-                        </Nav.Link>
+                       
+                        
                     </Nav>
                 </Navbar.Collapse>
             </Container>
